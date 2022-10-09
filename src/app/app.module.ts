@@ -6,17 +6,21 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { TopicComponent } from './topic/topic.component';
 import { HeadfootModule } from './modules/headfoot/headfoot.module';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { ChangeBgDirective } from './change-bg.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    TopicComponent
+    TopicComponent,
+    ChangeBgDirective
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HeadfootModule
+    HeadfootModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
